@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Registration Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		h1 {
+			text-align: center;
+			font-size: 36px;
+			margin-top: 40px;
+		}
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+		label {
+			display: block;
+			font-size: 18px;
+			margin-bottom: 5px;
+			color: #555;
+		}
+		input[type="text"], input[type="password"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 20px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		}
+		input[type="submit"] {
+			display: block;
+			background-color: #4CAF50;
+			color: #fff;
+			font-size: 18px;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		.error {
+			color: #f00;
+			font-size: 14px;
+			margin-top: 5px;
+		}
+		.link {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Registration</h1>
+	<form action="./Register" method="post">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username">
+
+		<div id="username-error" class="error"></div>
+
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="email">
+
+		<div id="email-error" class="error"></div>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password">
+
+		<div id="password-error" class="error"></div>
+
+		<input type="submit" value="Register">
+	</form>
+
+	<a href="login.html" class="link">Already have an account? Login here</a>
+</body>
+</html>
